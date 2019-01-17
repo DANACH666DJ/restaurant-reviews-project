@@ -1,5 +1,3 @@
-let staticCacheName = 'restaurant-static-v1';
-
 document.addEventListener("DOMContentLoaded", event => {
     if (navigator.serviceWorker) {
       navigator.serviceWorker
