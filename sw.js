@@ -23,10 +23,23 @@ self.addEventListener("install", event => {
             "img/9.jpg",
             "img/10.jpg"
           ]))
+          .then(self.skipWaiting())
     );
   });
 
+  self.addEventListener("activate", event => {
+    event.waitUntil(caches.keys().then(cacheNames => Promise.all(cacheNames.map(cache => {
+        if (cache !== staticCacheName) {
+          return caches.delete(cache);
+        }
+      })))
+    )
+  });
+
+
   
+
+
 
 
 
