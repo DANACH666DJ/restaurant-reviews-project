@@ -59,6 +59,7 @@ nav {
 nav h1 {
   margin: auto;
 }
+
 nav h1 a {
   color: #fff;
   font-size: calc(0.45em + 2vmin);
@@ -217,7 +218,7 @@ nav h1 a {
 }
 #restaurant-container {
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 #restaurant-name {
   color: darkred;
@@ -230,7 +231,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 #restaurant-address {
   font-size: 1.2em;
